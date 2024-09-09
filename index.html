@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/alte-haas-grotesk">
+
+    <style>
+        /* Universal box-sizing for easier layout */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Body and default styling */
+        body {
+            margin: 0;
+            font-family: 'Alte Haas Grotesk', sans-serif;
+            background-color: white;
+        }
+
+        /* Header styles */
+        header {
+            text-align: center;
+            font-size: 24px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Navigation styles */
+        nav {
+            text-align: center;
+            font-size: 16px;
+            background-color: #666;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Flexbox layout for "Hi, I'm Devon" and the image */
+        .parent3 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            gap: 20px;
+            flex-wrap: wrap; /* Wraps the content to move to a new line on small screens */
+        }
+
+        /* Make text and image container flexible */
+        .parent1, .parent2 {
+            flex: 1;
+            max-width: 600px; /* Limit the max width */
+        }
+
+        /* Ensure the image takes the full width of its container */
+        .parent2 img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Text styles */
+        .parent1 h2 {
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .parent1 p {
+            width: 100%;
+            font-size: 16px;
+            text-align: center; /* Center the text */
+            margin: 0 auto;
+        }
+
+        /* Flexbox container for gallery */
+        .gallery-container {
+            position: relative;
+            margin: 0 auto;
+            height: 75vh;
+            width: 50%;
+            overflow: hidden;
+        }
+
+        /* Responsive layout for smaller screens */
+        @media screen and (max-width: 768px) {
+            /* Stack text and image vertically */
+            .parent3 {
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .parent1, .parent2 {
+                max-width: 100%; /* Make the text and image take full width */
+            }
+
+            .gallery-container {
+                width: 90%; /* Make the gallery more adaptive to smaller screens */
+                height: auto;
+            }
+        }
+
+        /* Extra small screen adjustments */
+        @media screen and (max-width: 480px) {
+            header {
+                font-size: 20px;
+                padding: 15px;
+            }
+
+            nav {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .parent1 h2 {
+                font-size: 24px;
+            }
+
+            .parent1 p {
+                font-size: 14px;
+            }
+
+            .gallery-container {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="whole">
+        <!-- START OF HTML -->
+
+        <header class="site-header">
+            <h1>Devon Mann Personal Website</h1>
+        </header>
+
+        <nav>
+            <a href="#">Writing</a>
+            <a href="#">Design</a>
+            <a href="#">Resume</a>
+            <a href="#">Contact</a>
+            <a href="#">Interests</a>
+        </nav>
+
+        <div class="parent3">
+            <div class="parent1">
+                <h2>Hi, I'm Devon!</h2>
+                <p>I am a recent graduate of the University of Michigan, and obtained my degree in Communications &
+                    Media. I am a confident and energetic individual. I excel at writing, communication, and public
+                    engagement.</p>
+            </div>
+
+            <div class="parent2">
+                <img src="me.jpeg" alt="Devon's Photo">
+            </div>
+        </div>
+
+        <!-- Gallery Container for image gallery -->
+        <div class="gallery-container section">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides" style="display: block;">
+                <div class="numbertext">1 / 6</div>
+                <img src="homepage.png" alt="Homepage">
+            </div>
+
+            <!-- Additional slides... -->
+        </div>
+    </div>
+
+</body>
+
+</html>
