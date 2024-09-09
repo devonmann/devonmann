@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: 'Alte Haas Grotesk', sans-serif;
+}
+
+header {
+  text-align: center;
+  font-family: 'Alte Haas Grotesk', sans-serif;
+  padding: 20px;
+
+}
+
+
+
+img {
+justify-content: center;
+height: 40%;
+width: 40%;}
+
+.parent1 {display: flex;
+flex-direction: column;
+width: 30%;
+justify-content: center;
+}
+
+.parent2 {display: flex;
+justify-content: center;
+}
+
+.parent0 {display: fle
+flex-direction: row;}
